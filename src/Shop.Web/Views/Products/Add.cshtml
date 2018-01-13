@@ -1,16 +1,16 @@
 ﻿
-@model ProductViewModel
+@model AddProductViewModel
 <div class="row">
     <div class="col-lg-3">
         <form asp-action="Add" method="post">
             <div class="form-group">
                 <label asp-for="Name">Name:</label>
-                <input type="text" asp-for"Name" class="form-control" />
+                <input type="text" asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Price">Price:</label>
-                <input type="number" min="1" max="100000" class="form-control" />
+                <input  asp-for="Price" type="number" min="1" max="100000" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
