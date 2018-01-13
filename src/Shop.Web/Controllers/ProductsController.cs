@@ -35,7 +35,7 @@ namespace Shop.Web.Controllers
 
             }
             );
-            return View(_products);
+            return View(products);
         }
         [HttpGet("add")]
         public IActionResult Add()
